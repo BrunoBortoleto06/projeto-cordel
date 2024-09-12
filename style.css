@@ -2,15 +2,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 :root{
+    --fonte-principal: Verdana, Geneva, Tahoma, Sans-serif;
     --fonte-header: 'Passion One', sans-serif;
     --fonte-p: 'Sriracha', sans-serif;
 }
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 html, body{
     min-height: 100vh;
+    font-family: var(--fonte-principal);
+}
+
+p{
+    font-family: var(--fonte-p);
+}
+
+header{
+    background-color: black;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: var(--fonte-header);
+}
+
+header > h1{
+    font-size: 8vw;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+section{
+    padding: 6vh 0 6vh 0;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte-p);
+    font-size: 3.4vw;
+}
+
+section.imagem{
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 5px 5px 13px rgba(0, 0, 0, 0.326);
+}
+
+section#img01{
+    background-image: url(imagens/background001.jpg);
+}
+
+section#img02{
+    background-image: url(imagens/background002.jpg);
+}
+
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.344);
+    color: white;
+    display: inline-block;
+    padding: 8px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section > p{
+    padding-bottom: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
 }
